@@ -1,0 +1,14 @@
+#set($inputRoot = $input.path('$')){
+  "meta": { "count": "$inputRoot.Count" },
+  "trackerId": "$inputRoot.Items[0].trackerId.S",
+  "data": {
+     #foreach($elem in $inputRoot.Items) {
+        "utime": "$elem.utime.N",
+        "time": "$elem.time.S",
+        "date": "$elem.date.S",
+        "serverDate": "$elem.serverDate.S"
+     }#if($foreach.hasNext),#end
+
+     #end
+  }
+}

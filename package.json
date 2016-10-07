@@ -1,0 +1,24 @@
+{
+  "name": "nue-scripts",
+  "version": "5.0.2",
+  "description": "AWS helper scripts",
+  "main": "nue.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bravokeyl/AWS-Scripts.git"
+  },
+  "keywords": [
+    "aws",
+    "scripts",
+    "lambda"
+  ],
+  "author": "bravokeyl",
+  "license": "GPL-3.0+",
+  "bugs": {
+    "url": "https://github.com/bravokeyl/AWS-Scripts/issues"
+  },
+  "homepage": "https://github.com/bravokeyl/AWS-Scripts#readme"
+}
