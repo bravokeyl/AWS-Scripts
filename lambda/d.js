@@ -41,7 +41,7 @@ exports.handler = function(event,context,cb) {
       apiVersion: '2012-08-10'
     });
 
-    const tableName = '50pMW';
+    const tableName = '60pMW';
 
     var q1 = isNaN(parseInt(event.params.querystring.st)) ? 0 : parseInt(event.params.querystring.st);
     var q2 = isNaN(parseInt(event.params.querystring.lt)) ? 0 : parseInt(event.params.querystring.lt);
@@ -59,8 +59,6 @@ exports.handler = function(event,context,cb) {
       st = getTodayStartTimeMilli();
       lt = getISTNowMilli();
     }
-
-
 
     const params = {
           "TableName": tableName,
